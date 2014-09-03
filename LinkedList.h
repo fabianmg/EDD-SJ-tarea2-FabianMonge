@@ -70,7 +70,6 @@ public:
             tail = tail->next;
 
         size++;
-        //cout << "**inserto (" << pElement << ")" << "----borrame fabian "<<endl;
     }
 
     void append(E pElement)
@@ -80,7 +79,6 @@ public:
         tail->next = new Node<E>(pElement);
         tail = tail->next; //Se actualiza el tail.
         size++;
-        cout << "Acaba de insertar el elemento(" << pElement << ") en la posicion (" << size<< ")" << endl;
     }
 
 
@@ -102,7 +100,6 @@ public:
         delete temp;
         size --;
         return result;
-        cout <<"borrado(" << result << ") borrame en (" << size<< ")" << endl;
     }
 
     void clear()
