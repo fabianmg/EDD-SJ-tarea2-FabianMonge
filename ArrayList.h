@@ -74,7 +74,6 @@ public:
             throw runtime_error("List full");
         elements[size] = pElement;// Se agrega al final de la lista
         size++; // Aumentamos el # de elemento que tiene la lista
-        showList();
     }
 
     E remove() throw(runtime_error)
@@ -156,27 +155,20 @@ public:
 
     void showList()
     {
-        /*//string msg = "";*/
-        for(int i=0; i<size-1; i++)
+        //imprime la lista
+        for(int i=0; i<size; i++)
             cout << " [" <<  elements[i] << "] " << endl;
-
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    void invert()
+    {
+        //invertir orden de lista
+        int cant = (size)/2;
+        for(int i=0 ;i <=cant-1 ;i++)
+        {
+            E temp = elements[i];// se guarda valor para luego moverlo
+            elements[i] = elements[size-1-i];
+            elements[size-1-i] = temp;
+        }
+    }
 };

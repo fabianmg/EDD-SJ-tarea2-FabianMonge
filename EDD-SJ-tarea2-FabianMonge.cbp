@@ -33,6 +33,7 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="ArrayList.h" />
+		<Unit filename="LinkedList.h" />
 		<Unit filename="Node.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
