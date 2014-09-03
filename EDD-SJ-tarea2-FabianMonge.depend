@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1409711535 source:c:\users\win7\google drive\tec\edd\practica\edd-sj-tarea2-fabianmonge\main.cpp
+	<iostream>
+	<stdio.h>
+	"ArrayList.h"
+
+1409711788 c:\users\win7\google drive\tec\edd\practica\edd-sj-tarea2-fabianmonge\arraylist.h
+	<stdexcept>
+
